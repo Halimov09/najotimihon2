@@ -7,6 +7,14 @@
   background-repeat: no-repeat;
   position: relative;
   padding: 153px 0;
+  @include for-phone-only {
+    margin-top: 66px;
+    background: url("../../img/mobilbit.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 115px 0 179px 0;
+    height: 100vh;
+  }
 }
 
 .herotop::before {
@@ -45,6 +53,10 @@
     left: -127px;
     top: 510px;
   }
+
+  @include for-phone-only{
+    left: -312px;
+  }
 }
 
 .herotop__container-h2 {
@@ -72,4 +84,34 @@
 
 .herotop__btn {
   margin-left: 95px;
+}
+
+.herotop__container--info {
+  @include for-left-only {
+    max-width: 573px;
+    text-align: center;
+    margin: 0 auto;
+    .herotop__container-h2 {
+      max-width: 100%;
+    }
+    .herotop__container-p {
+      margin-left: 0;
+      max-width: 100%;
+      padding: 24px 0 32px 0;
+    }
+    .herotop__btn {
+      margin-left: 0;
+    }
+  }
+  @include for-phone-only {
+    .herotop__container-h2 {
+      letter-spacing: -1.78571px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+    .herotop__container-p {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
 }

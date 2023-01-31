@@ -404,6 +404,9 @@ a {
   align-items: center;
 }
 @media (max-width: 576px) {
+  .header__container .logotop img {
+    width: 75.5px;
+  }
   .header__container #bar {
     display: block;
   }
@@ -480,6 +483,16 @@ a {
   position: relative;
   padding: 153px 0;
 }
+@media (max-width: 576px) {
+  .herotop {
+    margin-top: 66px;
+    background: url("../../img/mobilbit.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 115px 0 179px 0;
+    height: 100vh;
+  }
+}
 
 .herotop::before {
   content: "";
@@ -525,6 +538,11 @@ a {
     top: 510px;
   }
 }
+@media (max-width: 576px) {
+  .herotop::after {
+    left: -312px;
+  }
+}
 
 .herotop__container-h2 {
   font-family: "Space Mono";
@@ -551,4 +569,34 @@ a {
 
 .herotop__btn {
   margin-left: 95px;
+}
+
+@media (max-width: 845px) {
+  .herotop__container--info {
+    max-width: 573px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .herotop__container--info .herotop__container-h2 {
+    max-width: 100%;
+  }
+  .herotop__container--info .herotop__container-p {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 24px 0 32px 0;
+  }
+  .herotop__container--info .herotop__btn {
+    margin-left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .herotop__container--info .herotop__container-h2 {
+    letter-spacing: -1.78571px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .herotop__container--info .herotop__container-p {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }/*# sourceMappingURL=main.css.map */

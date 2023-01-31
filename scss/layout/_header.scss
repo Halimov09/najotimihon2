@@ -9,6 +9,11 @@
 .header__container {
   align-items: center;
   @include for-phone-only {
+    .logotop{
+        img{
+            width: 75.5px;
+        }
+    }
     #bar {
       display: block;
     }
