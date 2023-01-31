@@ -1,0 +1,24 @@
+@mixin for-befafter-only {
+  @media (max-width: 1359px) {
+    @content;
+  }
+}
+
+@mixin for-left-only {
+    @media (max-width: 845px) {
+      @content;
+    }
+  }
+  
+
+@mixin for-table-only {
+  @media (max-width: 687px) {
+    @content;
+  }
+}
+
+@mixin for-phone-only {
+  @media (max-width: 576px) {
+    @content;
+  }
+}

@@ -1,0 +1,75 @@
+// main herotop
+.herotop {
+  margin-top: 97px;
+  background: linear-gradient(#2f3b59b0, #2f3b59b0), url("../../img/Bitmap.png");
+  background-size: cover;
+  mix-blend-mode: normal;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 153px 0;
+}
+
+.herotop::before {
+  content: "";
+  width: 202px;
+  height: 15px;
+  background-image: url("../../img/line1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: 353px;
+  @include for-befafter-only {
+    top: 410px;
+  }
+
+  @include for-left-only {
+    background-image: none;
+  }
+}
+
+.herotop::after {
+  content: "";
+  width: 446px;
+  height: 138px;
+  background-image: url("../../img/line2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 288px;
+  top: 353px;
+  @include for-befafter-only {
+    top: 410px;
+  }
+  @include for-left-only {
+    left: -127px;
+    top: 510px;
+  }
+}
+
+.herotop__container-h2 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5.6rem;
+  line-height: 56px;
+  color: $white-clr;
+  letter-spacing: -2.5px;
+  max-width: 500px;
+}
+
+.herotop__container-p {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 25px;
+  color: $white-clr;
+  padding: 40px 0;
+  margin-left: 95px;
+  max-width: 405px;
+}
+
+.herotop__btn {
+  margin-left: 95px;
+}
