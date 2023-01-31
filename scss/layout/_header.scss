@@ -9,10 +9,10 @@
 .header__container {
   align-items: center;
   @include for-phone-only {
-    .logotop{
-        img{
-            width: 75.5px;
-        }
+    .logotop {
+      img {
+        width: 75.5px;
+      }
     }
     #bar {
       display: block;
@@ -36,6 +36,12 @@
         line-height: 25px;
         color: $dim-grey-clr;
       }
+    }
+    @include for-left-only{
+        margin-left: 0px;
+        li{
+            margin-left: 12px;
+        }
     }
     @include for-table-only {
       margin-left: 15px;
@@ -77,3 +83,10 @@
 .show {
   display: block !important;
 }
+
+.container {
+  @include for-left-only{
+    max-width: 573px;
+  }
+}
+
