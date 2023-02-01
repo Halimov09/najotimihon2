@@ -492,10 +492,10 @@ a {
   position: absolute;
   top: 15px;
   right: 15px;
-  border: none;
-  background-color: transparent;
-  color: #FFF4DF;
   font-size: 15px;
+  background-color: transparent;
+  color: #FCB72B;
+  border: none;
 }
 
 .herotop {

@@ -13,6 +13,8 @@ function delet() {
   body.style.overflow = "scroll";
 }
 
-bar.addEventListener("click", show);
+bar.addEventListener("click", ()=>{
+  show()
+});
 btnn.addEventListener("click", delet)
 
