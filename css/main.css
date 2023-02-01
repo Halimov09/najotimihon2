@@ -1088,6 +1088,12 @@ a {
   padding: 69px 0;
 }
 @media (max-width: 576px) {
+  .mainabtop {
+    background: linear-gradient(rgba(47, 59, 89, 0.6901960784), rgba(47, 59, 89, 0.6901960784)), url("../../img/abheromobile.png");
+    background-position: center center;
+  }
+}
+@media (max-width: 576px) {
   .mainabtop .mainabtop__container h2 {
     margin: 0 auto;
   }

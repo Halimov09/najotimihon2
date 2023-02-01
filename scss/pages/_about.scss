@@ -7,9 +7,14 @@
   background-repeat: no-repeat;
   position: relative;
   padding: 69px 0;
+  @include for-phone-only {
+    background: linear-gradient(#2f3b59b0, #2f3b59b0),
+      url("../../img/abheromobile.png");
+      background-position: center center;
+  }
   .mainabtop__container {
     @include for-phone-only {
-      h2{
+      h2 {
         margin: 0 auto;
       }
     }
