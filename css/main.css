@@ -1152,4 +1152,189 @@ a {
 
 .maintwoab {
   margin-bottom: 120px;
+}
+
+.mainabinfo {
+  padding-bottom: 120px;
+}
+.mainabinfo .mainabinfo__container {
+  justify-content: center;
+}
+.mainabinfo .mainabinfo__container h2 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #495567;
+  letter-spacing: -2.14286px;
+  padding-bottom: 103px;
+}
+@media (max-width: 576px) {
+  .mainabinfo .mainabinfo__container h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.mainabinfo__containertwo {
+  -moz-column-gap: 28px;
+       column-gap: 28px;
+  flex-wrap: wrap;
+  row-gap: 55px;
+}
+.mainabinfo__containertwo .mainabinfo__container--block {
+  max-width: 350px;
+  text-align: center;
+  position: relative;
+}
+.mainabinfo__containertwo .mainabinfo__container--block h3 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 28px;
+  color: #495567;
+  padding: 87px 0 27px 0;
+  letter-spacing: -1.07143px;
+}
+.mainabinfo__containertwo .mainabinfo__container--block p {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  text-align: center;
+}
+@media (max-width: 845px) {
+  .mainabinfo__containertwo {
+    text-align: center;
+  }
+  .mainabinfo__containertwo .mainabinfo__container--block {
+    max-width: 100%;
+  }
+}
+
+.mainabinfo__container--block::before {
+  content: "01";
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fcb72b;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+  left: 50%;
+  margin-left: -47px;
+  top: 199px;
+}
+
+.mainabbefor::before {
+  content: "02";
+}
+
+.mainabbefor1::before {
+  content: "03";
+}
+
+.maindrop__containerone {
+  justify-content: center;
+}
+.maindrop__containerone h2 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #495567;
+  letter-spacing: -2.14286px;
+  padding-bottom: 64px;
+}
+
+.maindrop-left {
+  width: 350px;
+}
+.maindrop-left h2 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #495567;
+  letter-spacing: -1.78571px;
+}
+
+.maindrop__containertwo {
+  justify-content: space-between;
+}
+@media (max-width: 845px) {
+  .maindrop__containertwo {
+    flex-direction: column;
+  }
+  .maindrop__containertwo .maindrop__right {
+    max-width: 100%;
+  }
+  .maindrop__containertwo .maindrop-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .maindrop__containertwo .maindrop-left h2 {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 845px) and (max-width: 576px) {
+  .maindrop__containertwo .maindrop-left h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.maindrop__right {
+  width: 730px;
+}
+
+.maindropinfo-block {
+  background: #f2f5f9;
+  padding: 32px 40px;
+}
+
+.maindropinfo-block:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.open {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p {
+  padding-top: 24px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #495567;
+}
+
+.three {
+  margin-top: 64px;
+  margin-bottom: 160px;
+}
+
+@media (max-width: 576px) {
+  .open h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }/*# sourceMappingURL=main.css.map */

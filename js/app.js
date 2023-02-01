@@ -1,7 +1,7 @@
 const bar = document.querySelector("#bar"),
-  body = document.querySelector("body");
-menu = document.querySelector(".header__container--menu"),
-btnn = document.querySelector("#btnn")
+  body = document.querySelector("body"),
+  menu = document.querySelector(".header__container--menu"),
+  btnn = document.querySelector("#btnn");
 
 function show() {
   menu.classList.add("show");
@@ -13,8 +13,7 @@ function delet() {
   body.style.overflow = "scroll";
 }
 
-bar.addEventListener("click", ()=>{
-  show()
+bar.addEventListener("click", () => {
+  show();
 });
-btnn.addEventListener("click", delet)
-
+btnn.addEventListener("click", delet);
