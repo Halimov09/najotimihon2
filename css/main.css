@@ -807,7 +807,12 @@ a {
 }
 @media (max-width: 576px) {
   .heroone__right::after {
-    top: 30%;
+    top: 26%;
+  }
+}
+@media (max-width: 350px) {
+  .heroone__right::after {
+    top: 18%;
   }
 }
 

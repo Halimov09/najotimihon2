@@ -286,7 +286,10 @@
     left: 32px;
   }
   @include for-phone-only{
-    top: 30%;
+    top: 26%;
+  }
+  @include for-mini-only{
+    top: 18%;
   }
 }
 
