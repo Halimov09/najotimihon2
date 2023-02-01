@@ -928,5 +928,6 @@ a {
 @media (max-width: 576px) {
   .heroonerepeat::after {
     top: 7px;
+    left: 40%;
   }
 }/*# sourceMappingURL=main.css.map */
