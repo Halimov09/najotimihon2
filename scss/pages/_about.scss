@@ -1,0 +1,71 @@
+.mainabtop {
+  margin-top: 97px;
+  background: linear-gradient(#2f3b59b0, #2f3b59b0),
+    url("../../img/abouthero.png");
+  background-size: cover;
+  mix-blend-mode: normal;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 69px 0;
+  .mainabtop__container {
+    @include for-phone-only {
+      h2{
+        margin: 0 auto;
+      }
+    }
+    h2 {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 56px;
+      color: $white-clr;
+      letter-spacing: -2.5px;
+    }
+  }
+}
+
+.maintop__oval {
+  position: absolute;
+  display: flex;
+  right: -31px;
+  @include for-phone-only {
+    display: none;
+  }
+  .oval {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+  }
+  .oval3 {
+    background-color: $white-clr;
+  }
+}
+
+.mainabpeople-one,
+.maintwoab-img {
+  max-width: 445px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.mainabone {
+  margin: 120px 0;
+  .container {
+    .heroone__right::after {
+      content: "";
+      width: 740px;
+      height: 150px;
+      background-image: url("../../img/aboutpeop1rec.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      bottom: 38px;
+    }
+  }
+}
+
+.maintwoab {
+  margin-bottom: 120px;
+}

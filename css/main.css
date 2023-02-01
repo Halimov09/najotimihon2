@@ -320,7 +320,7 @@ html {
 
 body,
 html {
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -507,6 +507,9 @@ a {
 .footertop {
   background-color: #495567;
   padding: 102px 0;
+  background-image: url("../../img/footerrec1.png"), url("../../img/footerrec1.png"), url("../../img/footerrec2.png");
+  background-position: bottom right 632px, bottom right 229px, bottom right;
+  background-repeat: no-repeat;
 }
 
 .footertop__container {
@@ -582,8 +585,10 @@ a {
   fill: white;
 }
 
-.footertop {
-  padding: 62px 0;
+@media (max-width: 845px) {
+  .footertop {
+    padding: 62px 0;
+  }
 }
 @media (max-width: 845px) {
   .footertop .footertop__container {
@@ -1071,4 +1076,73 @@ a {
     top: 7px;
     left: 40%;
   }
+}
+
+.mainabtop {
+  margin-top: 97px;
+  background: linear-gradient(rgba(47, 59, 89, 0.6901960784), rgba(47, 59, 89, 0.6901960784)), url("../../img/abouthero.png");
+  background-size: cover;
+  mix-blend-mode: normal;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 69px 0;
+}
+@media (max-width: 576px) {
+  .mainabtop .mainabtop__container h2 {
+    margin: 0 auto;
+  }
+}
+.mainabtop .mainabtop__container h2 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  color: white;
+  letter-spacing: -2.5px;
+}
+
+.maintop__oval {
+  position: absolute;
+  display: flex;
+  right: -31px;
+}
+@media (max-width: 576px) {
+  .maintop__oval {
+    display: none;
+  }
+}
+.maintop__oval .oval {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+}
+.maintop__oval .oval3 {
+  background-color: white;
+}
+
+.mainabpeople-one,
+.maintwoab-img {
+  max-width: 445px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.mainabone {
+  margin: 120px 0;
+}
+.mainabone .container .heroone__right::after {
+  content: "";
+  width: 740px;
+  height: 150px;
+  background-image: url("../../img/aboutpeop1rec.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 38px;
+}
+
+.maintwoab {
+  margin-bottom: 120px;
 }/*# sourceMappingURL=main.css.map */

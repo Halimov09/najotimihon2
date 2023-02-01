@@ -1,6 +1,10 @@
 .footertop {
   background-color: $dark-navy-clr;
   padding: 102px 0;
+  background-image: url("../../img/footerrec1.png"),
+    url("../../img/footerrec1.png"), url("../../img/footerrec2.png");
+  background-position: bottom right 632px, bottom right 229px, bottom right;
+  background-repeat: no-repeat;
 }
 
 .footertop__container {
@@ -78,7 +82,9 @@
 }
 
 .footertop {
-  padding: 62px 0;
+  @include for-left-only {
+    padding: 62px 0;
+  }
   .footertop__container {
     @include for-left-only {
       flex-direction: column;
