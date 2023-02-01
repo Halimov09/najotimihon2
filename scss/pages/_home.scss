@@ -400,4 +400,7 @@
   @include for-table-only{
     left: 50%;
   }
+  @include for-phone-only{
+    top: 7px;
+  }
 }
