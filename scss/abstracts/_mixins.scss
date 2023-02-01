@@ -4,12 +4,17 @@
   }
 }
 
-@mixin for-left-only {
-    @media (max-width: 845px) {
-      @content;
-    }
+@mixin for-orta-only {
+  @media (max-width: 970px) {
+    @content;
   }
-  
+}
+
+@mixin for-left-only {
+  @media (max-width: 845px) {
+    @content;
+  }
+}
 
 @mixin for-table-only {
   @media (max-width: 687px) {
