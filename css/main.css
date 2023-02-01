@@ -555,7 +555,7 @@ a {
 @media (max-width: 576px) {
   .herotop::after {
     left: -312px;
-    top: 400px;
+    top: 450px;
   }
 }
 
