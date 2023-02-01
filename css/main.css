@@ -488,6 +488,16 @@ a {
   }
 }
 
+#btnn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  color: #FFF4DF;
+  font-size: 15px;
+}
+
 .herotop {
   margin-top: 97px;
   background: linear-gradient(rgba(47, 59, 89, 0.6901960784), rgba(47, 59, 89, 0.6901960784)), url("../../img/Bitmap.png");
