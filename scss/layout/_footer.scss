@@ -1,0 +1,125 @@
+.footertop {
+  background-color: $dark-navy-clr;
+  padding: 102px 0;
+}
+
+.footertop__container {
+  justify-content: space-between;
+  align-items: center;
+  h2 {
+    max-width: 415px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 48px;
+    color: $white-clr;
+    letter-spacing: -2.14286px;
+  }
+  @include for-phone-only {
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  .footertop__app {
+    display: flex;
+    @include for-mini-only {
+      img {
+        height: 30px;
+      }
+    }
+    .footerappimg {
+      margin-right: 18px;
+      @include for-phone-only {
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+.footerbottom {
+  background-color: $bg-clr;
+  padding: 35px 0;
+}
+
+.footerbottom__menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 58px;
+  li {
+    margin-right: 32px;
+    a {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 25px;
+      color: $dim-grey-clr;
+    }
+  }
+  .footerbottom__menu-svg {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    a {
+      svg {
+        margin-left: 24px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.svg:hover path {
+  fill: white;
+}
+
+.footertop {
+  padding: 62px 0;
+  .footertop__container {
+    @include for-left-only {
+      flex-direction: column;
+      text-align: center;
+      row-gap: 40px;
+    }
+  }
+}
+
+.footerbottom {
+  @include for-table-only {
+    padding: 64px 0 88px 0;
+  }
+  .footerbottom__container {
+    @include for-table-only {
+      flex-direction: column;
+      text-align: center;
+      .footerbottom__menu {
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 41px;
+        li {
+          margin-right: 0;
+          margin-bottom: 16px;
+        }
+        .footerbottom__menu-svg {
+          margin-left: 0;
+          svg {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-table-only {
+  .footerbottom__menu-svg {
+    margin-top: 71px;
+  }
+  .svg-hover:not(:last-child) {
+    margin-right: 24px;
+  }
+}

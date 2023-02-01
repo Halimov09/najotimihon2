@@ -98,4 +98,8 @@
   background-color: transparent;
   color: $yellow-clr;
   border: none;
+  display: none;
+  @include for-phone-only{
+    display: block;
+  }
 }
