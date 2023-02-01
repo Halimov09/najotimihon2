@@ -371,3 +371,33 @@
     max-width: 311px;
   }
 }
+
+
+.heroonerepeat{
+  img{
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    @include for-phone-only{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// heroonerepeat
+
+.heroonereapeat{
+  margin-top: 160px;
+  .heroone__container{
+    align-items: center;
+  }
+}
+
+.heroonerepeat::after{
+  top: 106px;
+  right: -397px;
+  @include for-table-only{
+    left: 50%;
+  }
+}

@@ -895,4 +895,33 @@ a {
   .container {
     max-width: 311px;
   }
+}
+
+.heroonerepeat img {
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+}
+@media (max-width: 576px) {
+  .heroonerepeat img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.heroonereapeat {
+  margin-top: 160px;
+}
+.heroonereapeat .heroone__container {
+  align-items: center;
+}
+
+.heroonerepeat::after {
+  top: 106px;
+  right: -397px;
+}
+@media (max-width: 687px) {
+  .heroonerepeat::after {
+    left: 50%;
+  }
 }/*# sourceMappingURL=main.css.map */
