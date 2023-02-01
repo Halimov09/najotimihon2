@@ -1091,6 +1091,7 @@ a {
   .mainabtop {
     background: linear-gradient(rgba(47, 59, 89, 0.6901960784), rgba(47, 59, 89, 0.6901960784)), url("../../img/abheromobile.png");
     background-position: center center;
+    margin-top: 66px;
   }
 }
 @media (max-width: 576px) {

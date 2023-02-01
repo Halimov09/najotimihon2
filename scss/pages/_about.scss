@@ -11,6 +11,7 @@
     background: linear-gradient(#2f3b59b0, #2f3b59b0),
       url("../../img/abheromobile.png");
       background-position: center center;
+      margin-top: 66px;
   }
   .mainabtop__container {
     @include for-phone-only {
