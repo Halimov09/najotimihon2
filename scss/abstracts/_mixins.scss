@@ -36,7 +36,7 @@
 }
 
 @mixin for-mini-only {
-  @media (max-width: 350px) {
+  @media (max-width: 375px) {
     @content;
   }
 }

@@ -1,6 +1,6 @@
 // location
-.body{
-    background: #F2F2F2;
+.body {
+  background: #f2f2f2;
 }
 
 .location {
@@ -50,35 +50,56 @@
   }
 }
 
-.maps__container{
-    display: none;
-    flex-direction: column;
-    row-gap: 16px;
-    @include for-phone-only{
-        display: flex;
-    }
+.maps__container {
+  display: none;
+  flex-direction: column;
+  row-gap: 16px;
+  @include for-phone-only {
+    display: flex;
+  }
 }
 
 .maps__block {
   background: rgba(252, 183, 43, 0.15);
   padding: 22px 0;
   text-align: center;
+  @include for-phone-only {
+    h3 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
   h3 {
     font-family: "Space Mono";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 28px; 
+    line-height: 28px;
     color: $dark-navy-clr;
     letter-spacing: -1.07143px;
   }
 }
 
-@include for-phone-only{
-    .imgnot{
-        display: none;
+@include for-phone-only {
+  .location__container {
+    h2 {
+      font-size: 24px;
+      line-height: 28px;
     }
-    .imgopen{
-        display: block;
+  }
+  .imgnot {
+    display: none;
+  }
+  .imgopen {
+    display: block;
+  }
+}
+
+@include for-phone-only {
+  .mainabtop__container {
+    h2 {
+      font-size: 40px !important;
+      line-height: 40px !important;
     }
+  }
 }
