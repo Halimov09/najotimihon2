@@ -1,0 +1,67 @@
+.curertop {
+  overflow: hidden;
+  background: linear-gradient(#2f3b59b0, #2f3b59b0),
+    url("../../img/curershero.png");
+  @include for-phone-only {
+    background: linear-gradient(#2f3b59b0, #2f3b59b0),
+      url("../../img/curerstable.png");
+    background-position: center center;
+    margin-top: 66px;
+  }
+}
+
+.curersone::after {
+  background-image: url("../../img/line3.png") !important;
+}
+.curersbot__container {
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.curersbot__container-lin {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 64px 32px 40px;
+  background: #f2f5f9;
+  .all-btn {
+    padding: 11px 64px;
+  }
+  h2 {
+    display: block;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: $dark-navy-clr;
+    letter-spacing: -1.07143px;
+    span {
+      font-family: "Lexend Deca";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      padding-top: 8px;
+    }
+  }
+  @include for-phone-only{
+    flex-direction: column;
+    text-align: center;
+    padding: 36px 32px 32px 32px;
+    width: 100%;
+    .all-btn{
+        margin-top: 16px;
+    }
+  }
+}
+
+.curersbot{
+   .container{
+    padding-bottom: 160px;
+    @include for-table-only{
+        padding-bottom: 120px;
+    }
+   }
+}

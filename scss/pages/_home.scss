@@ -124,7 +124,7 @@
 }
 
 .heromiddle__container {
-  column-gap: 28px;
+  column-gap: 30px;
   row-gap: 40px;
   flex-wrap: wrap;
   position: relative;
@@ -367,7 +367,8 @@
 }
 
 .container{
-  @include for-phone-only{
+  @include for-mini-only{
+    width: 100%;
     max-width: 311px;
   }
 }
