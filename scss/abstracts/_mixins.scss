@@ -4,6 +4,13 @@
   }
 }
 
+@mixin for-tyi-only {
+  @media (max-width: 1072px) {
+    @content;
+  }
+}
+
+
 @mixin for-orta-only {
   @media (max-width: 970px) {
     @content;

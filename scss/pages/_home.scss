@@ -215,7 +215,8 @@
   padding: 11px 41px;
 }
 
-.heroone__left, .herotwo__left {
+.heroone__left,
+.herotwo__left {
   max-width: 445px;
   h2 {
     font-style: normal;
@@ -253,14 +254,15 @@
   width: 100%;
 }
 
-.heroone__right, .herotwo__right {
+.heroone__right,
+.herotwo__right {
   max-width: 445px;
   overflow: hidden;
   @include for-orta-only {
     max-width: 573px;
   }
-  @include for-phone-only{
-    img{
+  @include for-phone-only {
+    img {
       max-width: 100%;
     }
   }
@@ -285,10 +287,10 @@
   @include for-table-only {
     left: 32px;
   }
-  @include for-phone-only{
+  @include for-phone-only {
     top: 26%;
   }
-  @include for-mini-only{
+  @include for-mini-only {
     top: 18%;
   }
 }
@@ -307,38 +309,36 @@
   }
 }
 
-.heroone{
+.heroone {
   overflow: hidden;
 }
 
-
 // herotwo
 
-.herotwo{
+.herotwo {
   margin-top: 160px;
   position: relative;
 }
 
-.herotwo__container{
+.herotwo__container {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   row-gap: 56px;
   @include for-orta-only {
     flex-direction: column-reverse;
-
   }
 }
 
-.herotwo__right{
-  img{
-    @include for-phone-only{
+.herotwo__right {
+  img {
+    @include for-phone-only {
       max-width: 100%;
     }
   }
 }
 
-.herotwo__right::after{
+.herotwo__right::after {
   content: "";
   position: absolute;
   width: 738px;
@@ -347,12 +347,12 @@
   background-repeat: no-repeat;
   left: -385px;
   top: 2px;
-  @include for-phone-only{
+  @include for-phone-only {
     left: -472px;
   }
 }
 
-.herotwo__right::before{
+.herotwo__right::before {
   content: "";
   position: absolute;
   width: 445px;
@@ -361,25 +361,24 @@
   background-repeat: no-repeat;
   left: -344px;
   top: 0;
-  @include for-table-only{
+  @include for-table-only {
     background-image: none;
   }
 }
 
-.container{
-  @include for-mini-only{
+.container {
+  @include for-mini-only {
     width: 100%;
     max-width: 311px;
   }
 }
 
-
-.heroonerepeat{
-  img{
+.heroonerepeat {
+  img {
     width: 445px;
     height: 445px;
     border-radius: 50%;
-    @include for-phone-only{
+    @include for-phone-only {
       max-width: 100%;
       height: auto;
     }
@@ -388,21 +387,21 @@
 
 // heroonerepeat
 
-.heroonereapeat{
+.heroonereapeat {
   margin-top: 160px;
   margin-bottom: 307px;
-  .heroone__container{
+  .heroone__container {
     align-items: center;
   }
 }
 
-.heroonerepeat::after{
+.heroonerepeat::after {
   top: 106px;
   right: -397px;
-  @include for-table-only{
+  @include for-table-only {
     left: 50%;
   }
-  @include for-phone-only{
+  @include for-phone-only {
     top: 7px;
     left: 40%;
   }

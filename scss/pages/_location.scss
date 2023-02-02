@@ -1,0 +1,84 @@
+// location
+.body{
+    background: #F2F2F2;
+}
+
+.location {
+  padding: 120px 0;
+  @include for-phone-only {
+    padding: 72px 0 40px 0;
+  }
+}
+
+.location__container {
+  align-items: center;
+  h2 {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: $dark-navy-clr;
+    letter-spacing: -2.14286px;
+    max-width: 350px;
+  }
+  p {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $dim-grey-clr;
+    margin-left: 30px;
+    max-width: 445px;
+  }
+  .locatbtn {
+    margin-left: auto;
+    padding: 14px 44px;
+    display: block !important;
+  }
+  @include for-tyi-only {
+    flex-direction: column;
+    text-align: center;
+    p {
+      margin-left: 0;
+      padding: 40px 0;
+    }
+    .locatbtn {
+      margin-left: 0;
+    }
+  }
+}
+
+.maps__container{
+    display: none;
+    flex-direction: column;
+    row-gap: 16px;
+    @include for-phone-only{
+        display: flex;
+    }
+}
+
+.maps__block {
+  background: rgba(252, 183, 43, 0.15);
+  padding: 22px 0;
+  text-align: center;
+  h3 {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px; 
+    color: $dark-navy-clr;
+    letter-spacing: -1.07143px;
+  }
+}
+
+@include for-phone-only{
+    .imgnot{
+        display: none;
+    }
+    .imgopen{
+        display: block;
+    }
+}
