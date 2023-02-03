@@ -504,6 +504,10 @@ a {
   }
 }
 
+.header-btn {
+  margin-left: auto !important;
+}
+
 .footertop {
   background-color: #495567;
   padding: 102px 0;
